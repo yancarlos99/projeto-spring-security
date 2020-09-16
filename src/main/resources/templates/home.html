@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+		<title>Exemplo - Spring Security</title>
+
+		<link href="/css/style.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<div layout:fragment="content">
+			<div class="page-header">
+				<h1>Bem vindo(a), <span sec:authentication="name"></span>!</h1>
+			</div>
+			<p>
+				Exemplo do curso Primeiros passos com Spring Security!
+			</p>
+		</div>
+	</body>
+</html>

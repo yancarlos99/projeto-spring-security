@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+	<title>Dados de acesso</title>
+	
+	<link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="page-header">
+			<h1>Dados de acesso ao site</h1>
+		</div>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Página</th>
+					<th>Número de acessos</th>
+					<th>Tempo de acesso (min)</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>/home</td>
+					<td>250.000</td>
+					<td>800</td>
+				</tr>
+				<tr>
+					<td>/cursos</td>
+					<td>185.520</td>
+					<td>1.500</td>
+				</tr>
+				<tr>
+					<td>/artigos</td>
+					<td>120.000</td>
+					<td>1.000</td>
+				</tr>
+				<tr>
+					<td>/exemplos</td>
+					<td>200.000</td>
+					<td>500</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
